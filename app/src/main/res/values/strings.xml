@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">aplicativoAula</string>
+    <string name="jogador">Jogador</string>
+    <string name="entre_jogador">Entre Jogador</string>
+    <string name="senha_secreta">Senha secreta</string>
+    <string name="nome_do_jogador">Nome do Jogador</string>
+    <string name="entrar_na_aventura">Entrar na Aventura!</string>
+    <string name="ol_jogador">Olá, Jogador!</string>
+    <string name="sua_pr_xima_aventura_em">Sua próxima aventura é em:</string>
+    <string name="carregando_masmorra">Carregando Masmorra...</string>
+    <string name="carregando_classe">Carregando classe...</string>
+    <string name="voltar_ao_in_cio">Voltar ao Início</string>
+    <string name="desistencia_assim_tao_facil_voce_foi_elimidado">Desistencia assim tao facil, Voce foi elimidado</string>
+    <string name="voltar_ao_menu">Voltar ao menu</string>
+</resources>
