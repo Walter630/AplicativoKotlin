@@ -39,6 +39,7 @@ class AplicativoActivityAula : AppCompatActivity(), View.OnClickListener {
         val nomeSalvo = sharedPrefs.getString("NOME_USUARIO", "Jogador")
 
         binding.textExibirNome.text = "Voce Entrou parabens, nao tem mais saida jogador , $nomeSalvo!"
+
     }
 
     private fun masmorras() {
