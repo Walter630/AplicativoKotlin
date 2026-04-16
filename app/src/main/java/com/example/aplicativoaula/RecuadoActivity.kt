@@ -9,9 +9,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.aplicativoaula.databinding.ActivityRecuadoBinding
+
 class RecuadoActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityRecuadoBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
