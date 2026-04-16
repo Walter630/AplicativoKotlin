@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import kotlin.jvm.java
 import com.example.aplicativoaula.databinding.ActivityMainBinding
+import androidx.core.content.edit
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
@@ -40,12 +41,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         } else {
             // guardo a referencia
             val sharedPrefs = getSharedPreferences("jogo_prefs", MODE_PRIVATE)
-            val editor = sharedPrefs.edit()
-            editor.putString("NOME_USUARIO", name)
-            editor.apply() // salvo o nome
+            sharedPrefs.edit {
+                putString("NOME_USUARIO", name)
+            } // salvo o nome
 
             val intent = Intent(this, AplicativoActivityAula::class.java)
             startActivity(intent)
+            finish()
         }
     }
     private fun setListeners(){

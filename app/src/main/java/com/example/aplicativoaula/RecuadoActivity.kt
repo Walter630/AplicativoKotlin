@@ -1,9 +1,9 @@
 package com.example.aplicativoaula
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -37,12 +37,13 @@ class RecuadoActivity : AppCompatActivity(), View.OnClickListener {
             recuarLogin()
         }
     }
+    @SuppressLint("SetTextI18n")
     private fun configNameUser() {
         val sharedPrefs = getSharedPreferences("jogo_prefs", MODE_PRIVATE)
         // nome da main
         val nomeSalvo = sharedPrefs.getString("NOME_USUARIO", "Jogador")
 
-        binding.text2ExibirNome.text = "$nomeSalvo!"
+        binding.text2ExibirNome.text = "Desistindo assim tao rapido caro: $nomeSalvo!"
     }
     private fun recuarLogin() {
         val intent = Intent(this, MainActivity::class.java)
