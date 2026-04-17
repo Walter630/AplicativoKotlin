@@ -47,7 +47,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             val intent = Intent(this, AplicativoActivityAula::class.java)
             startActivity(intent)
-            finish()
         }
     }
     private fun setListeners(){
